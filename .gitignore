@@ -1,0 +1,29 @@
+#package file 注释 包文件
+#*.jar不提交是因为该项目后期要使用支付宝JDK提供的jar包，但是在maven中没有
+#课程采用中央仓库非私服 即使不忽略*.jar maven的jar包也不会提交上去 
+#不在项目中而是在本地仓库里面
+*.war
+*.ear
+#kdiff3 ignore 注释 kdiff3工具
+*.orig
+#maven ignore 注释 maven 文件
+target/ 指target文件下的所有文件都不推送
+#eclipse ignore
+.settings/
+.project
+.classpatch
+#idea
+.idea/
+/idea/
+*.ipr
+*.iml
+*.iws
+#temp file 注释临时文件
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+#system ignore 系统级文件
+.DS_Store
+Thumbs.db 系统临时文件
